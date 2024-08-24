@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { LocalStorageService } from '@services';
 
-export function useLocalStorage<T>(key: string, initialValue: T) {
+export const useLocalStorage = <T>(key: string, initialValue: T) => {
 	const storageService = new LocalStorageService();
 
 	const [storedValue, setStoredValue] = useState<T>(initialValue);
@@ -35,6 +35,6 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
 	};
 
 	return [storedValue, setValue, removeValue] as const;
-}
+};
 
 export default useLocalStorage;

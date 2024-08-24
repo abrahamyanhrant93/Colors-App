@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { useTheme } from '@hooks';
 
-export function useStyles() {
+export const useStyles = () => {
 	const { theme } = useTheme();
 
 	const styles = StyleSheet.create({
@@ -29,4 +29,4 @@ export function useStyles() {
 	});
 
 	return { styles, theme };
-}
+};

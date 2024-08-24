@@ -3,7 +3,7 @@ import { useTheme } from '@hooks';
 
 const { width } = Dimensions.get('screen');
 
-export function useStyles() {
+export const useStyles = () => {
 	const { theme } = useTheme();
 
 	const styles = StyleSheet.create({
@@ -28,4 +28,4 @@ export function useStyles() {
 	});
 
 	return { styles, theme };
-}
+};

@@ -7,7 +7,7 @@ import { MainScreen } from './src/app/screens';
 import { Onboarding } from './src/app/components';
 import { useFirstLaunch } from './src/common/hooks';
 
-export default function App() {
+const App = () => {
 	const { isFirstLaunch, completeFirstLaunch, loading } = useFirstLaunch();
 
 	return (
@@ -15,4 +15,5 @@ export default function App() {
 			{isFirstLaunch ? <Onboarding loading={loading} onComplete={completeFirstLaunch} /> : <MainScreen />}
 		</ThemeProvider>
 	);
-}
+};
+export default App;

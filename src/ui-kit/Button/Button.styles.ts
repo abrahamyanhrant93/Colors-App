@@ -9,7 +9,7 @@ export const containerStyles = StyleSheet.create({
 	},
 });
 
-export function useStyles() {
+export const useStyles = () => {
 	const { theme } = useTheme();
 
 	const variantStyleSet = {
@@ -182,4 +182,4 @@ export function useStyles() {
 	const loadingColor = theme.colors?.primaryBlack;
 
 	return { styleSets: variantStyleSet, blockStyleSet, typeStyleSet, theme, loadingColor };
-}
+};

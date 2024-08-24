@@ -11,7 +11,7 @@ import type { ButtonProps } from '@rneui/base';
  *  Simple button component.
  *  "Variant" prop allows to use button with predefined styles.
  */
-function Button({
+const Button = ({
 	variant = 'default',
 	buttonStyle,
 	titleStyle,
@@ -25,7 +25,7 @@ function Button({
 	disabled = false,
 	onPress,
 	...props
-}: IButtonProps) {
+}: IButtonProps) => {
 	const { styleSets, typeStyleSet, blockStyleSet, loadingColor } = useStyles();
 
 	const withIconStyle: ViewStyle = icon
@@ -69,7 +69,7 @@ function Button({
 			onPress={handlePress}
 		/>
 	);
-}
+};
 
 const renderBlurButtonView = (loading: boolean) =>
 	function BlurButtonView({ children, ...viewProps }: ViewProps) {
