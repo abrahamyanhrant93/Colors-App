@@ -30,7 +30,7 @@ export function useStyles() {
 				minHeight: 32,
 			},
 			titleStyle: {
-				fontFamily: 'Inter_400Regular',
+				fontFamily: 'Trebuchet MS',
 				fontSize: 12,
 			},
 		}),
@@ -42,7 +42,7 @@ export function useStyles() {
 				minHeight: 56,
 			},
 			titleStyle: {
-				fontFamily: 'Inter_400Regular',
+				fontFamily: 'Trebuchet MS',
 				fontSize: 16,
 				fontWeight: '700',
 			},
@@ -54,7 +54,7 @@ export function useStyles() {
 				minHeight: 60,
 			},
 			titleStyle: {
-				fontFamily: 'Inter_400Regular',
+				fontFamily: 'Trebuchet MS',
 				fontSize: 16,
 			},
 		}),
@@ -63,17 +63,17 @@ export function useStyles() {
 	const typeStyleSet = {
 		solid: StyleSheet.create({
 			buttonStyle: {
-				backgroundColor: theme.colors.yellow,
+				backgroundColor: theme.colors?.yellow,
 				borderColor: '#CCC',
 				borderWidth: 0.5,
-				fontFamily: 'Inter_700Bold',
+				fontFamily: 'Trebuchet MS',
 				fontSize: 14,
 				fontWeight: 500,
 				paddingHorizontal: 12,
 			},
 			titleStyle: {
 				color: theme.colors?.primaryBlack,
-				fontFamily: 'Inter_400Regular',
+				fontFamily: 'Trebuchet MS',
 				fontSize: 14,
 				textTransform: 'uppercase',
 			},
@@ -91,7 +91,7 @@ export function useStyles() {
 			},
 			titleStyle: {
 				color: theme.colors?.primaryBlack,
-				fontFamily: 'Inter_400Regular',
+				fontFamily: 'Trebuchet MS',
 				fontWeight: 'bold',
 			},
 			disabledStyle: {
@@ -150,7 +150,7 @@ export function useStyles() {
 		grey: StyleSheet.create({
 			titleStyle: {
 				color: theme.colors?.primaryBlack,
-				fontFamily: 'Inter_400Regular',
+				fontFamily: 'Trebuchet MS',
 				fontSize: 16,
 			},
 			buttonStyle: {

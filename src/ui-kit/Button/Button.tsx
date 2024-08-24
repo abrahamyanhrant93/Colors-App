@@ -1,8 +1,9 @@
 import { Button as RNEButton } from '@rneui/base';
+import { BlurView } from 'expo-blur';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
+
 import { useStyles, containerStyles } from './Button.styles';
 
-import { BlurView } from 'expo-blur';
 import type { ViewStyle, GestureResponderEvent, ViewProps } from 'react-native';
 import type { ButtonProps } from '@rneui/base';
 
@@ -34,7 +35,7 @@ function Button({
 	const handlePress = (event: GestureResponderEvent) => {
 		onPress?.(event);
 	};
-	const ViewComponent = type === 'blurred' ? renderBlurButtonView(loading) : renderSimpleView(loading);
+	const ViewComponent = type === 'blurred' ? renderBlurButtonView(!!loading) : renderSimpleView(!!loading);
 
 	return (
 		<RNEButton
