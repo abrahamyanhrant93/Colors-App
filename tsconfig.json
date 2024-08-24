@@ -25,12 +25,6 @@
       "@utils": [
         "./src/common/utils"
       ],
-      "@errors": [
-        "./src/common/errors"
-      ],
-      "@testing": [
-        "./src/common/testing"
-      ],
       "@typings": [
         "./src/common/typings"
       ],
@@ -56,9 +50,6 @@
       "@screens": [
         "./src/app/screens"
       ],
-      "@assets": ["./src/app/assets"],
-      "@i18n": ["./src/i18n"],
-      "@schemas/*": ["./src/schemas/*"]
     }
   },
   "exclude": [

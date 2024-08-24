@@ -66,8 +66,6 @@ module.exports = {
 					'@services': ['./src/services'],
 					'@hooks': ['./src/common/hooks'],
 					'@utils': ['./src/common/utils'],
-					'@errors': ['./src/common/errors'],
-					'@testing': ['./src/common/testing'],
 					'@typings': ['./src/common/typings'],
 					'@constants': ['./src/constants'],
 					'@ui-kit': ['./src/ui-kit'],
