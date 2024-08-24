@@ -10,13 +10,13 @@ import { Onboarding } from '../../components';
 
 const MainScreen = () => {
 	const { styles } = useStyles();
-	const { isFirstLaunch, completeFirstLaunch } = useFirstLaunch();
+	const { isFirstLaunch, completeFirstLaunch, loading } = useFirstLaunch();
 
 	return (
 		<>
 			{isFirstLaunch ? (
 				<View style={styles.onboardingWrapper}>
-					<Onboarding onComplete={completeFirstLaunch} />
+					<Onboarding loading={loading} onComplete={completeFirstLaunch} />
 				</View>
 			) : (
 				<ColorLayout />

@@ -1,6 +1,8 @@
 import { Dimensions, StyleSheet } from 'react-native';
 import { useTheme } from '@hooks';
 
+const { width } = Dimensions.get('screen');
+
 export function useStyles() {
 	const { theme } = useTheme();
 
@@ -9,13 +11,14 @@ export function useStyles() {
 			alignItems: 'center',
 			flex: 1,
 			justifyContent: 'center',
-			width: Dimensions.get('screen').width,
+			width,
 		},
 		text: {
 			fontFamily: 'Trebuchet MS',
 			fontSize: 24,
 			fontWeight: 'bold',
 			textAlign: 'center',
+			userSelect: 'none',
 		},
 		counter: {
 			fontSize: 18,
