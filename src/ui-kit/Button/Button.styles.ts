@@ -25,13 +25,13 @@ export function useStyles() {
 		}),
 		small: StyleSheet.create({
 			buttonStyle: {
-				height: 32,
-				maxHeight: 32,
-				minHeight: 32,
+				height: 36,
+				maxHeight: 36,
+				minHeight: 36,
 			},
 			titleStyle: {
 				fontFamily: 'Trebuchet MS',
-				fontSize: 12,
+				fontSize: 14,
 			},
 		}),
 		medium: StyleSheet.create({

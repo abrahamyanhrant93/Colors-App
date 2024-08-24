@@ -4,7 +4,7 @@ import { Button } from '@ui-kit';
 
 import { useStyles } from './Onboarding.useStyles';
 
-const Onboarding: React.FC<IOnboardingProps> = ({ onComplete }) => {
+const Onboarding: React.FC<IOnboardingProps> = ({ onComplete, loading }) => {
 	const { styles } = useStyles();
 	return (
 		<View style={styles.container}>
@@ -19,6 +19,7 @@ const Onboarding: React.FC<IOnboardingProps> = ({ onComplete }) => {
 				variant={'small'}
 				trackingName="get_started"
 				titleStyle={styles.ctaTitle}
+				loading={loading}
 				onPress={onComplete}
 			/>
 		</View>
@@ -27,6 +28,7 @@ const Onboarding: React.FC<IOnboardingProps> = ({ onComplete }) => {
 
 interface IOnboardingProps {
 	onComplete: () => void;
+	loading?: boolean;
 }
 
 export default Onboarding;

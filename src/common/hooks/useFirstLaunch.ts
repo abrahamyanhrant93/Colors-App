@@ -7,13 +7,13 @@ export const useFirstLaunch = () => {
 	const localStorage = new LocalStorageService();
 
 	const [isFirstLaunch, setIsFirstLaunch] = useState<boolean>(false);
-	const [loading, setLoading] = useState<boolean>(true); // Track if initial load is complete
+	const [loading, setLoading] = useState<boolean>(true);
 
 	useEffect(() => {
 		const checkFirstLaunch = async () => {
 			const alreadyLaunched = await localStorage.getItem(ALREADY_LAUNCHED);
 			setIsFirstLaunch(alreadyLaunched !== 'true');
-			setLoading(false); // Initial load complete
+			setLoading(false);
 		};
 
 		checkFirstLaunch();
@@ -27,6 +27,6 @@ export const useFirstLaunch = () => {
 	return {
 		isFirstLaunch,
 		completeFirstLaunch,
-		loading, // Return loading status to handle initial load
+		loading,
 	};
 };
